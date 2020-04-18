@@ -2,3 +2,19 @@
   opacity:0;
   transform:translateY(50px);
 }
+/*============================================================================
+アニメーション
+============================================================================*/
+.header-animation{
+  animation-name:header-animation;
+  animation-duration:2s;
+  background: #7addbc;
+}
+@keyframes header-animation {
+  from{
+    transform: translateY(-60px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}

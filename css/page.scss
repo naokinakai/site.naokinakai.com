@@ -16,6 +16,9 @@ body {
   margin: 0px;
 	min-height: 100vh;
 }
+img{
+  display: block;
+}
 *{
 	box-sizing:border-box;
 	position:relative;
@@ -29,7 +32,10 @@ header{
 	top:0px;
 	width:100%;
 	.site-title{
-		padding:10px;
+				padding:10px;
+			img{
+				height:40px;
+			}
 	}
 	.gnavi{
 		li{
@@ -63,7 +69,7 @@ small{
 	line-height: 2em;
 	min-height: 100vh;
 }
-.section_skill-overview .h_area,
+/*.section_skill-overview .h_area,
 .section_skill-level .h_area,
 .section_career .h_area{
 	width:100%;
@@ -79,10 +85,7 @@ small{
 }
 .section_recent-work .h_area{
 	padding: 20px 0px;
-}
-
-
-
+}*/
 /*============================================================================
 section_eyecatch
 ============================================================================*/
@@ -118,10 +121,10 @@ section_eyecatch
 		}
 		.sub-text{
 			font-size:18px;
+			padding: 0px 10px;
 		}
 	}
 }
-
 /*============================================================================
 section_career
 ============================================================================*/
@@ -148,12 +151,28 @@ padding-bottom: 60px;
 	margin-bottom:20px;
 }*/
 /*============================================================================
-section_skill-overview
+section_career
 ============================================================================*/
-.section_overview {
-    min-height: 400px;
-    background: #F4F4F4;
-    padding: 60px 0px 80px;
+.section_career{
+  min-height: 400px;
+  background: #F4F4F4;
+  padding: 60px 0px 80px;
+	.text-area{
+		max-width:700px;
+		.h_area{
+			.h{
+				padding-left: 1em;
+			}
+		}
+		.text-box{
+			p{
+				background: #fff;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				padding: 1em;
+			}
+		}
+	}
 }
 /*============================================================================
 section_skillset
@@ -184,12 +203,10 @@ section_skillset
 		}
 	}
 }
-
-
 /*============================================================================
 section_recent-work
 ============================================================================*/
-.section_recent-work{
+/*.section_recent-work{
 	.img-area{
 		background: url("/img/apple-computer-desk-devices-326503.jpg") no-repeat;
 	}
@@ -205,4 +222,4 @@ section_recent-work
 	left:0px;
 	top:0px;
 	font-size: 0.5em;
-}
+}*/

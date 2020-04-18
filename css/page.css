@@ -18,6 +18,10 @@ body {
   min-height: 100vh;
 }
 
+img {
+  display: block;
+}
+
 * {
   box-sizing: border-box;
   position: relative;
@@ -34,6 +38,9 @@ header {
 }
 header .site-title {
   padding: 10px;
+}
+header .site-title img {
+  height: 40px;
 }
 header .gnavi li a {
   color: #fff;
@@ -65,29 +72,23 @@ small {
   min-height: 100vh;
 }
 
-.section_skill-overview .h_area,
+/*.section_skill-overview .h_area,
 .section_skill-level .h_area,
-.section_career .h_area {
-  width: 100%;
-  text-align: center;
-  padding: 20px 0px;
+.section_career .h_area{
+	width:100%;
+	text-align:center;
+	padding:20px 0px;
+	.h{
+		font-size:36px;
+		font-weight:bold;
+	}
+	.h_sub-text{
+		font-size:18px;
+	}
 }
-.section_skill-overview .h_area .h,
-.section_skill-level .h_area .h,
-.section_career .h_area .h {
-  font-size: 36px;
-  font-weight: bold;
-}
-.section_skill-overview .h_area .h_sub-text,
-.section_skill-level .h_area .h_sub-text,
-.section_career .h_area .h_sub-text {
-  font-size: 18px;
-}
-
-.section_recent-work .h_area {
-  padding: 20px 0px;
-}
-
+.section_recent-work .h_area{
+	padding: 20px 0px;
+}*/
 /*============================================================================
 section_eyecatch
 ============================================================================*/
@@ -125,6 +126,7 @@ section_eyecatch
 }
 .section_eyecatch .text-area .sub-text {
   font-size: 18px;
+  padding: 0px 10px;
 }
 
 /*============================================================================
@@ -153,12 +155,24 @@ padding-bottom: 60px;
 	margin-bottom:20px;
 }*/
 /*============================================================================
-section_skill-overview
+section_career
 ============================================================================*/
-.section_overview {
+.section_career {
   min-height: 400px;
   background: #F4F4F4;
   padding: 60px 0px 80px;
+}
+.section_career .text-area {
+  max-width: 700px;
+}
+.section_career .text-area .h_area .h {
+  padding-left: 1em;
+}
+.section_career .text-area .text-box p {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1em;
 }
 
 /*============================================================================
@@ -192,22 +206,22 @@ section_skillset
 /*============================================================================
 section_recent-work
 ============================================================================*/
-.section_recent-work .img-area {
-  background: url("/img/apple-computer-desk-devices-326503.jpg") no-repeat;
+/*.section_recent-work{
+	.img-area{
+		background: url("/img/apple-computer-desk-devices-326503.jpg") no-repeat;
+	}
 }
-
-.section_recent-work ul li {
-  margin-left: 1.5em;
+.section_recent-work ul li{
+	margin-left:1.5em;
 }
-
-.section_recent-work ul li:before {
-  content: "■";
-  margin-left: -1.5em;
-  color: #222;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  font-size: 0.5em;
-}
+.section_recent-work ul li:before{
+	content:"■";
+	margin-left:-1.5em;
+	color:#222;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-size: 0.5em;
+}*/
 
 /*# sourceMappingURL=page.css.map */

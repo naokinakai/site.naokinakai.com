@@ -26,7 +26,6 @@ header
 header{
 display:flex;
 justify-content:space-between;
-height:72px;
 nav{
   ul{
   z-index:3;
@@ -49,7 +48,7 @@ nav{
 /*============================================================================
 section_career
 ============================================================================*/
-.section_career ul{
+/*.section_career ul{
 	display:flex;
   width: 1280px;
   margin: 0px auto;
@@ -58,11 +57,11 @@ section_career
 .section_career ul li{
 	width:25%;
   padding:20px;
-}
+}*/
 /*============================================================================
 skill-level
 ============================================================================*/
-.section_skill-level{
+/*.section_skill-level{
   padding:100px 0px;
   background:#FFDE00;
   background-size: 200px;
@@ -105,11 +104,11 @@ skill-level
   margin-top:-10px;
   color:#FFDE00;
   font-size:20px;
-}
+}*/
 /*============================================================================
-section_overview
+section_career
 ============================================================================*/
-.section_overview{
+.section_career{
   min-height:400px;
   background: #F4F4F4;
   padding: 60px 0px 80px;
@@ -121,11 +120,11 @@ section_overview
     .h_area{
       margin-bottom:20px;
       .h{
-        font-family: Poppins,sans-serif;
-        font-size: 62px;
-        font-weight: 700;
+        /*font-family: Poppins,sans-serif;*/
+        font-size: 48px;
+        font-weight: bold;
         line-height: 1;
-        letter-spacing: .08em;
+        /*letter-spacing: .08em;*/
       }
     }
     .text-box{
@@ -181,7 +180,7 @@ section_skillset
 /*============================================================================
 section_recent-work
 ============================================================================*/
-.section_recent-work{
+/*.section_recent-work{
   min-height:400px;
   .img-area{
     width:50%;
@@ -204,12 +203,10 @@ section_recent-work
         font-weight: 700;
         line-height: 1;
         letter-spacing: .08em;
-        /*-webkit-transform: translateX(-100px);
-        transform: translateX(-100px);*/
       }
     }
   }
-}
+}*/
 
 
 /*@media screen and (min-width: 960px) and (max-width: 1279px)*/

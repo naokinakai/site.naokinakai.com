@@ -13,16 +13,16 @@ windowHeightは、画面の高さ
 
 
 /*------------------------------------------------
-ふんわり表示
+フェード上昇
 ------------------------------------------------*/
 $(function(){
   //$('.effect1').css("opacity","0");
   $(window).scroll(function (){
-    $(".effect_fade-in").each(function(){
+    $(".effect1").each(function(){
       var imgPos = $(this).offset().top;//imgPosは、動作させる要素の上部
       var scroll = $(window).scrollTop();//scrollは、ブラウザ全体のスクロール位置
       var windowHeight = $(window).height();//windowHeightは、画面の高さ
-      if (scroll > imgPos - windowHeight + windowHeight/4){//要素の上部が、画面の真ん中より上に行ったら動作させる。
+      if (scroll > imgPos - windowHeight + windowHeight/2){//要素の上部が、画面の真ん中より上に行ったら動作させる。
         $(this).css("opacity", "1");
       } else {
         $(this).css("opacity","0" );
@@ -31,16 +31,16 @@ $(function(){
   });
 });
 /*------------------------------------------------
-フェードイン上昇
+フェード上昇
 ------------------------------------------------*/
 $(function(){
   //$('.effect2').css({'opacity':'0','transform':'translateY(0px)'});
   $(window).scroll(function (){
-    $(".effect_fade-in_move-up").each(function(){
+    $(".effect2").each(function(){
       var imgPos = $(this).offset().top;//imgPosは、動作させる要素の上部
       var scroll = $(window).scrollTop();//scrollは、ブラウザ全体のスクロール位置
       var windowHeight = $(window).height();//windowHeightは、画面の高さ
-      if (scroll > imgPos - windowHeight + windowHeight/4){//要素の上部が、画面の真ん中より上に行ったら動作させる。
+      if (scroll > imgPos - windowHeight + windowHeight/2){//要素の上部が、画面の真ん中より上に行ったら動作させる。
         $(this).css({'opacity':'1','transform':'translateY(0px)'});
       } else {
         $(this).css({'opacity':'0','transform':'translateY(50px)'});
@@ -49,34 +49,16 @@ $(function(){
   });
 });
 /*------------------------------------------------
-フェードイン下へ
-------------------------------------------------*/
-$(function(){
-  //$('.effect5').css({'opacity':'0','transform':'translateY(0px)'});
-  $(window).scroll(function (){
-    $(".effect_fade-in_move-down").each(function(){
-      var imgPos = $(this).offset().top;//imgPosは、動作させる要素の上部
-      var scroll = $(window).scrollTop();//scrollは、ブラウザ全体のスクロール位置
-      var windowHeight = $(window).height();//windowHeightは、画面の高さ
-      if (scroll > imgPos - windowHeight + windowHeight/4){//要素の上部が、画面の真ん中より上に行ったら動作させる。
-        $(this).css({'opacity':'1','transform':'translateY(0px)'});
-      } else {
-        $(this).css({'opacity':'0','transform':'translateY(-50px)'});
-      }
-    });
-  });
-});
-/*------------------------------------------------
-フェードイン左へ
+フェード左
 ------------------------------------------------*/
 $(function(){
   //$('.effect3').css({'opacity':'0','transform':'translateX(0px)'});
   $(window).scroll(function (){
-    $(".effect_fade-in_move-left").each(function(){
+    $(".effect3").each(function(){
       var imgPos = $(this).offset().top;//imgPosは、動作させる要素の上部
       var scroll = $(window).scrollTop();//scrollは、ブラウザ全体のスクロール位置
       var windowHeight = $(window).height();//windowHeightは、画面の高さ
-      if (scroll > imgPos - windowHeight + windowHeight/4){//要素の上部が、画面の真ん中より上に行ったら動作させる。
+      if (scroll > imgPos - windowHeight + windowHeight/2){//要素の上部が、画面の真ん中より上に行ったら動作させる。
         $(this).css({'opacity':'1','transform':'translateX(0px)'});
       } else {
         $(this).css({'opacity':'0','transform':'translateX(50px)'});
@@ -85,16 +67,16 @@ $(function(){
   });
 });
 /*------------------------------------------------
-フェードイン右へ
+フェード右
 ------------------------------------------------*/
 $(function(){
   //$('.effect4').css({'opacity':'0','transform':'translateX(0px)'});
   $(window).scroll(function (){
-    $(".effect_fade-in_move-right").each(function(){
+    $(".effect4").each(function(){
       var imgPos = $(this).offset().top;//imgPosは、動作させる要素の上部
       var scroll = $(window).scrollTop();//scrollは、ブラウザ全体のスクロール位置
       var windowHeight = $(window).height();//windowHeightは、画面の高さ
-      if (scroll > imgPos - windowHeight + windowHeight/4){//要素の上部が、画面の真ん中より上に行ったら動作させる。
+      if (scroll > imgPos - windowHeight + windowHeight/2){//要素の上部が、画面の真ん中より上に行ったら動作させる。
         $(this).css({'opacity':'1','transform':'translateX(0px)'});
       } else {
         $(this).css({'opacity':'0','transform':'translateX(-50px)'});
@@ -102,16 +84,24 @@ $(function(){
     });
   });
 });
+/*------------------------------------------------
 
-
-
-
-
-
-
-
-
-
+------------------------------------------------*/
+$(function(){
+  //$('.effect5').css({'opacity':'0','transform':'translateY(0px)'});
+  $(window).scroll(function (){
+    $(".effect5").each(function(){
+      var imgPos = $(this).offset().top;//imgPosは、動作させる要素の上部
+      var scroll = $(window).scrollTop();//scrollは、ブラウザ全体のスクロール位置
+      var windowHeight = $(window).height();//windowHeightは、画面の高さ
+      if (scroll > imgPos - windowHeight + windowHeight/2){//要素の上部が、画面の真ん中より上に行ったら動作させる。
+        $(this).css({'opacity':'1','transform':'translateY(0px)'});
+      } else {
+        $(this).css({'opacity':'0','transform':'translateY(-50px)'});
+      }
+    });
+  });
+});
 
 
 
@@ -123,15 +113,62 @@ $(function(){
   //$('.gnavi, li, a').css({'color':'#fff','transform':'translateX(0px)'});
   $(window).scroll(function (){
     $(".header").each(function(){
-      //var imgPos = $(this).offset().top;//imgPosは、動作させる要素の上部
+      var imgPos = $(this).offset().top;//imgPosは、動作させる要素の上部
       var scroll = $(window).scrollTop();//scrollは、ブラウザ全体のスクロール位置
 
-      var section2 = $(".section_career").offset().top;
+      var section2 = $(".section2").offset().top;
       var windowHeight = $(window).height();//windowHeightは、画面の高さ
-      if (scroll > section2 - windowHeight/10){//要素の上部が、画面の真ん中より上に行ったら動作させる。
+      if (scroll > section2 - windowHeight + windowHeight/4){//要素の上部が、画面の真ん中より上に行ったら動作させる。
+        $(".gnavi, li, a", this).addClass('header-animation');
+      } else {
+        $(".gnavi, li, a", this).removeClass('header-animation');
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//==========================================
+//ヘッダーの色が変わるスクリプト
+//==========================================
+$(function(){
+  //$('.header').css({'background': 'none'});
+  $(window).scroll(function (){
+    $(".section_skill-level").each(function(){
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      //var windowHeight = $(window).height();
+      //if (scroll > imgPos - windowHeight + windowHeight/2){
+      if (scroll > imgPos){
         $(".header").addClass('header-animation');
       } else {
-        $(".gnavi, li, a", ".header").removeClass('header-animation');
+        $(".header").removeClass('header-animation');
       }
     });
   });

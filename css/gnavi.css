@@ -85,9 +85,9 @@
 	left: 0;
 	right: 0;
 	width: 0;
-	height: 4px;
+	height: 2px;
 	margin: auto;
-	background: #000;
+	background: #29a9d0;
 	opacity: 0;
 	transition: all 0.2s ease;
 	-webkit-transition: all 0.2s ease;
@@ -108,7 +108,7 @@
 		right: 0;
 		width: 200px;
 		height: 300px;
-		background: #FFF;
+		background: rgba(64,181,187,0.8);
 	}
 	#gNav nav {
 		display: table;

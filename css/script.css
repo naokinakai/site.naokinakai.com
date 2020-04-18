@@ -1,6 +1,25 @@
+@charset "UTF-8";
 .effect2 {
   opacity: 0;
   transform: translateY(50px);
+}
+
+/*============================================================================
+繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ
+============================================================================*/
+.header-animation {
+  animation-name: header-animation;
+  animation-duration: 2s;
+  background: #7addbc;
+}
+
+@keyframes header-animation {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=script.css.map */

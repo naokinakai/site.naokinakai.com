@@ -12,12 +12,12 @@
 <?php include ($_SERVER['DOCUMENT_ROOT'] . '/inc/header.php');?>
 
 <main>
-<section class="section_eyecatch" id="top">
+<section class="section_eyecatch" id="sec_top">
 <div class="bg-area">
   <!--作成完了するまで非表示
   <video playsinline autoplay muted loop src="/img/video.mp4">
-  </video>
-  -->
+  </video>-->
+
 </div>
 <div class="text-area">
   <div class="page-title font_Lobster">Appeal Site</div>
@@ -27,13 +27,13 @@
 
 
 
-<section class="section_overview">
+<section class="section_career" id="sec_career">
   <div class="img-area">
   </div>
   <div class="text-area">
     <div class="h_area">
-      <h1 class="h">概要</h1>
-      <div class="h_sub-text">Overview</div>
+      <h1 class="h">Career</h1>
+      <!--<div class="h_sub-text">Career</div>-->
     </div>
     <div class="text-box">
       <p class="mb">2015年から制作会社に勤務し、デザイン・コーディング・プログラミング・ディレクションを、行ってきました。<br>
@@ -54,12 +54,12 @@
 
 
 
-<section class="section_skillset" id="skillset">
+<section class="section_skillset" id="sec_skillset">
   <div class="inner-area">
     <div class="title-area">
       <div class="h_area">
         <h1 class="h">Skill Set</h1>
-        <div class="h_sub-text">Skill Set</div>
+        <!--<div class="h_sub-text">Skill Set</div>-->
       </div>
       <div class="img-box"><img src="/img/dell-laptop-computer-on-table-2349209.jpg" alt=""></div>
     </div>
