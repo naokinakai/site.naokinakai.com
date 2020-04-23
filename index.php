@@ -1,8 +1,7 @@
 <?php include ($_SERVER['DOCUMENT_ROOT'] . '/inc/head-meta.php');?>
-<title>サイト</title>
+<title>Appeal</title>
 <?php include ($_SERVER['DOCUMENT_ROOT'] . '/inc/head-css.php');?>
 <link rel="stylesheet" href="/css/gnavi.css">
-
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
