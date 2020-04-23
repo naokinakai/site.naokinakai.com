@@ -62,12 +62,12 @@ section_career
 section_skillset
 ============================================================================*/
 .section_skillset{
-  padding:60px 0px;
   .inner-area{
     display:flex;
+    flex-direction: column;
     width: 600px;
     margin: 0px auto;
-    flex-direction: column;
+    padding: 0px 0px 60px;
   }
   .title-area{
     width: 600px;

@@ -57,15 +57,13 @@
   /*============================================================================
   section_skillset
   ============================================================================*/
-  .section_skillset {
-    padding: 60px 0px;
-  }
   .section_skillset .inner-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin: 0px auto;
+    padding: 0px 0px 60px;
   }
   .section_skillset .title-area {
     width: 480px;

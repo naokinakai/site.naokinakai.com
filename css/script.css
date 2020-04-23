@@ -1,7 +1,8 @@
 @charset "UTF-8";
-.effect2 {
+.effect_fade-in_move-right {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateX(-50px);
+  transition: all 1s;
 }
 
 /*============================================================================

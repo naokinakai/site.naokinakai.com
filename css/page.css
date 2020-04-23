@@ -72,23 +72,6 @@ small {
   min-height: 100vh;
 }
 
-/*.section_skill-overview .h_area,
-.section_skill-level .h_area,
-.section_career .h_area{
-	width:100%;
-	text-align:center;
-	padding:20px 0px;
-	.h{
-		font-size:36px;
-		font-weight:bold;
-	}
-	.h_sub-text{
-		font-size:18px;
-	}
-}
-.section_recent-work .h_area{
-	padding: 20px 0px;
-}*/
 /*============================================================================
 section_eyecatch
 ============================================================================*/
@@ -132,31 +115,6 @@ section_eyecatch
 /*============================================================================
 section_career
 ============================================================================*/
-/*.section_career{
-	background: #f1f1f1;
-padding-bottom: 60px;
-}
-.section_career ul li:nth-child(1){
-	background:#f6f6f6;
-}
-.section_career ul li:nth-child(2){
-	background:#f3f3f3;
-}
-.section_career ul li:nth-child(3){
-	background:#f1f1f1;
-}
-.section_career ul li:nth-child(4){
-	background:#fff;
-}
-.section_career ul li h2{
-	width:100%;
-	text-align:center;
-	font-weight:bold;
-	margin-bottom:20px;
-}*/
-/*============================================================================
-section_career
-============================================================================*/
 .section_career {
   min-height: 400px;
   background: #F4F4F4;
@@ -167,33 +125,39 @@ section_career
 }
 .section_career .text-area .h_area .h {
   padding-left: 1em;
+  font-family: 'Roboto', sans-serif;
 }
 .section_career .text-area .text-box p {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 1em;
+  display: block;
 }
 
 /*============================================================================
 section_skillset
 ============================================================================*/
 .section_skillset {
-  margin: 0px auto;
-  min-height: 100vh;
   background: #F4F4F4;
 }
-.section_skillset .skill-list-area .list-h {
+.section_skillset .inner-area {
+  min-height: 100vh;
+}
+.section_skillset .inner-area .title-area .h_area .h {
+  font-family: 'Roboto', sans-serif;
+}
+.section_skillset .inner-area .skill-list-area .list-h {
   font-size: 12px;
   padding-left: 1em;
 }
-.section_skillset .skill-list-area ul {
+.section_skillset .inner-area .skill-list-area ul {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px dashed #ccc;
   margin-bottom: 8px;
 }
-.section_skillset .skill-list-area ul li {
+.section_skillset .inner-area .skill-list-area ul li {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -202,26 +166,5 @@ section_skillset
   line-height: 1em;
   background: #fff;
 }
-
-/*============================================================================
-section_recent-work
-============================================================================*/
-/*.section_recent-work{
-	.img-area{
-		background: url("/img/apple-computer-desk-devices-326503.jpg") no-repeat;
-	}
-}
-.section_recent-work ul li{
-	margin-left:1.5em;
-}
-.section_recent-work ul li:before{
-	content:"■";
-	margin-left:-1.5em;
-	color:#222;
-	position:absolute;
-	left:0px;
-	top:0px;
-	font-size: 0.5em;
-}*/
 
 /*# sourceMappingURL=page.css.map */

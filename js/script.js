@@ -96,9 +96,10 @@ $(function(){
       var windowHeight = $(window).height();//windowHeightは、画面の高さ
       if (scroll > imgPos - windowHeight + windowHeight/4){//要素の上部が、画面の真ん中より上に行ったら動作させる。
         $(this).css({'opacity':'1','transform':'translateX(0px)'});
-      } else {
-        $(this).css({'opacity':'0','transform':'translateX(-50px)'});
       }
+      // else {
+      //  $(this).css({'opacity':'0','transform':'translateX(-50px)'});
+      //}
     });
   });
 });

@@ -5,6 +5,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 <?php include ($_SERVER['DOCUMENT_ROOT'] . '/inc/head-js.php');?>
 </head>
 
@@ -33,17 +34,16 @@
   <div class="text-area">
     <div class="h_area">
       <h1 class="h">Career</h1>
-      <!--<div class="h_sub-text">Career</div>-->
     </div>
     <div class="text-box">
-      <p class="mb">2015年から制作会社に勤務し、デザイン・コーディング・プログラミング・ディレクションを、行ってきました。<br>
+      <p class="mb effect_fade-in_move-right">2015年から制作会社に勤務し、デザイン・コーディング・プログラミング・ディレクションを、行ってきました。<br>
       wordpressのオリジナルテーマを作成し、お客様が更新しやすいコーポレートサイトを複数作成しました。<br>
       他には、PHPとMySQLを使用してスクラッチで顧客管理サイトの作成も経験させて頂いたこともあります。</p>
 
-      <p class="mb">2018年から勤務させて頂いている制作会社では主に動作しなくなったJavascript、jQuery、wordpressのテーマを直したり、<br>
+      <p class="mb effect_fade-in_move-right">2018年から勤務させて頂いている制作会社では主に動作しなくなったJavascript、jQuery、wordpressのテーマを直したり、<br>
       PHPを使用して、フォームにreCAPCHA設置や、ファイルを共通化して管理更新しやすくしたり、HTML5 CSS3 でレスポンシブデザインのページを作成したりしています。</p>
 
-      <p>将来は、React.jsでwebアプリ作成や、AWSを使用してサーバー環境構築も行っていこうと思っています。</p>
+      <p class="effect_fade-in_move-right">将来は、React.jsでwebアプリ作成や、AWSを使用してサーバー環境構築も行っていこうと思っています。</p>
     </div>
   </div>
 </section>
@@ -59,9 +59,8 @@
     <div class="title-area">
       <div class="h_area">
         <h1 class="h">Skill Set</h1>
-        <!--<div class="h_sub-text">Skill Set</div>-->
       </div>
-      <div class="img-box"><img src="/img/dell-laptop-computer-on-table-2349209.jpg" alt=""></div>
+      <div class="img-box"><img src="/img/dell-laptop-computer-on-table-2349209-resized.jpg" alt=""></div>
     </div>
     <div class="skill-list-area">
       <div class="skill-list-box">
@@ -136,25 +135,6 @@
   </div>
 </section>
 
-
-<!--
-<section class="section_recent-work">
-  <div class="img-area .effect2">
-  </div>
-  <div class="text-area">
-    <div class="inner-box">
-      <div class="h_area">
-        <h1 class="h">直近の仕事内容</h1>
-        <div class="h_sub-text">Recently</div>
-      </div>
-    <ul class="">
-      <li>SSHでコンソール接続しPHP.iniを書き換えphpアップロード上限を上げて、wordpressで作成されたサイトを引っ越ししました。</li>
-      <li>PHPフォームにreCAPCHA設置</li>
-    </ul>
-    </div>
-  </div>
-</section>
--->
 
 </main>
 
