@@ -44,11 +44,9 @@ section_career
     .h_area{
       margin-bottom:20px;
       .h{
-        /*font-family: Poppins,sans-serif;*/
         font-size: 48px;
         font-weight: bold;
         line-height: 1;
-        /*letter-spacing: .08em;*/
       }
     }
     .text-box{
@@ -99,8 +97,6 @@ section_skillset
     .skill-list-box{
       width: 600px;
       padding: 20px;
-      /*background:#fff;
-      box-shadow: 2px 2px 2px #ccc;*/
       ul{
         display:flex;
         flex-wrap:wrap;
@@ -108,42 +104,6 @@ section_skillset
     }
   }
 }
-/*============================================================================
-section_recent-work
-============================================================================*/
-.section_recent-work{
-  min-height:400px;
-  .img-area{
-    width:50%;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-  }
-  .text-area{
-    width: 1120px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
-    .inner-box{
-      padding: 64px 0px 64px 64px;
-      margin-left:50%;
-      .h{
-        font-family: Poppins,sans-serif;
-        font-size: 62px;
-        font-weight: 700;
-        line-height: 1;
-        letter-spacing: .08em;
-        /*-webkit-transform: translateX(-100px);
-        transform: translateX(-100px);*/
-      }
-    }
-  }
-}
-
-
-
-
 
 /*@media screen and (min-width: 1280px)*/
 }
