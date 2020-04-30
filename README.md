@@ -1,5 +1,5 @@
 # site.naokinakai.com
-最近作ったサイトでportfolioに使えるサイト
+最近作ったサイトでportfolioに使えるサイトが無かったので作ったアピールサイトです。
 
 ## 使用している技術
 - google fonts
@@ -9,4 +9,3 @@
 - HTML5 CSS3
 - PHP
 - SASS
-

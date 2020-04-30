@@ -32,7 +32,7 @@
   .section_career {
     min-height: 400px;
     background: #F4F4F4;
-    padding: 60px 10px 80px;
+    padding: 100px 10px 80px;
   }
   .section_career .text-area {
     width: 100%;
@@ -40,9 +40,6 @@
     position: relative;
     top: 0;
     left: 0;
-  }
-  .section_career .text-area .h_area {
-    margin-bottom: 20px;
   }
   .section_career .text-area .h_area .h {
     font-size: 48px;

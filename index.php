@@ -2,7 +2,6 @@
 <title>Appeal</title>
 <?php include ($_SERVER['DOCUMENT_ROOT'] . '/inc/head-css.php');?>
 <link rel="stylesheet" href="/css/gnavi.css">
-<!--<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">-->
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 <?php include ($_SERVER['DOCUMENT_ROOT'] . '/inc/head-js.php');?>
@@ -14,9 +13,8 @@
 <main>
 <section class="section_eyecatch" id="sec_top">
 <div class="bg-area">
-  <!--作成完了するまで非表示
   <video playsinline autoplay muted loop src="/img/video.mp4">
-  </video>-->
+  </video>
 
 </div>
 <div class="text-area">
@@ -76,7 +74,6 @@
           <li>jQuery</li>
           <li>React</li>
           <li>vue.js</li>
-          <li>three.js</li>
         </ul>
         <h2 class="list-h">コンパイラーなど</h2>
         <ul>
