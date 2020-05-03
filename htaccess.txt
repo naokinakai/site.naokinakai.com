@@ -3,13 +3,5 @@ RewriteEngine on
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-#ベーシック認証
-AuthUserFile /home/users/1/lolipop.jp-3014dd37f9debd99/web/site.naokinakai.com/.htpasswd
-AuthGroupFile /dev/null
-AuthName "Secret Area"
-AuthType Basic
-
-require valid-user
-
 #htmlファイルでphpを使用可能にする
 AddHandler application/x-httpd-php .php .html

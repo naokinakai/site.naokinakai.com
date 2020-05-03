@@ -82,9 +82,13 @@ body {
   /*font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;*/
   font-size: 16px;
   color: #222;
-  line-height: 150%;
+  line-height: 170%;
   margin: 0px;
   min-height: 100vh;
+}
+
+img {
+  display: block;
 }
 
 * {
@@ -103,6 +107,9 @@ header {
 }
 header .site-title {
   padding: 10px;
+}
+header .site-title img {
+  height: 40px;
 }
 header .gnavi li a {
   color: #fff;
@@ -123,38 +130,6 @@ footer a {
 small {
   width: 100%;
   text-align: center;
-}
-
-/*============================================================================
-共通
-============================================================================*/
-.main {
-  padding: 40px 0px;
-  line-height: 2em;
-  min-height: 100vh;
-}
-
-.section_skill-overview .h_area,
-.section_skill-level .h_area,
-.section_career .h_area {
-  width: 100%;
-  text-align: center;
-  padding: 20px 0px;
-}
-.section_skill-overview .h_area .h,
-.section_skill-level .h_area .h,
-.section_career .h_area .h {
-  font-size: 36px;
-  font-weight: bold;
-}
-.section_skill-overview .h_area .h_sub-text,
-.section_skill-level .h_area .h_sub-text,
-.section_career .h_area .h_sub-text {
-  font-size: 18px;
-}
-
-.section_recent-work .h_area {
-  padding: 20px 0px;
 }
 
 /*============================================================================
@@ -194,56 +169,57 @@ section_eyecatch
 }
 .section_eyecatch .text-area .sub-text {
   font-size: 18px;
+  padding: 0px 10px;
 }
 
 /*============================================================================
 section_career
 ============================================================================*/
 .section_career {
-  background: #f1f1f1;
-  padding-bottom: 60px;
+  min-height: 400px;
+  background: #F4F4F4;
 }
-
-.section_career ul li:nth-child(1) {
-  background: #f6f6f6;
+.section_career .text-area {
+  max-width: 700px;
 }
-
-.section_career ul li:nth-child(2) {
-  background: #f3f3f3;
+.section_career .text-area .h_area {
+  margin-bottom: 30px;
 }
-
-.section_career ul li:nth-child(3) {
-  background: #f1f1f1;
+.section_career .text-area .h_area .h {
+  padding-left: 1em;
+  font-family: 'Roboto', sans-serif;
 }
-
-.section_career ul li:nth-child(4) {
+.section_career .text-area .text-box p {
   background: #fff;
-}
-
-.section_career ul li h2 {
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1em;
+  display: block;
 }
 
 /*============================================================================
-section_skill-overview
+section_skillset
 ============================================================================*/
 .section_skillset {
-  margin: 0px auto;
+  background: #F4F4F4;
 }
-.section_skillset .skill-list-area .list-h {
+.section_skillset .inner-area {
+  min-height: 100vh;
+}
+.section_skillset .inner-area .title-area .h_area .h {
+  font-family: 'Roboto', sans-serif;
+}
+.section_skillset .inner-area .skill-list-area .list-h {
   font-size: 12px;
   padding-left: 1em;
 }
-.section_skillset .skill-list-area ul {
+.section_skillset .inner-area .skill-list-area ul {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px dashed #ccc;
   margin-bottom: 8px;
 }
-.section_skillset .skill-list-area ul li {
+.section_skillset .inner-area .skill-list-area ul li {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -254,54 +230,15 @@ section_skill-overview
 }
 
 /*============================================================================
-section_recent-work
-============================================================================*/
-.section_recent-work .img-area {
-  background: url("/img/apple-computer-desk-devices-326503.jpg") no-repeat;
-}
-
-.section_recent-work ul li {
-  margin-left: 1.5em;
-}
-
-.section_recent-work ul li:before {
-  content: "■";
-  margin-left: -1.5em;
-  color: #222;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  font-size: 0.5em;
-}
-
-/*============================================================================
 @media screen and (max-width: 479px)
 ============================================================================*/
 @media screen and (max-width: 479px) {
-  /*============================================================================
-  繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ
-  ============================================================================*/
-  .header-animation {
-    animation-name: header-animation;
-    animation-duration: 2s;
-    background: #7addbc;
-  }
-
-  @keyframes header-animation {
-    from {
-      transform: translateY(-60px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
   /*============================================================================
   header
   ============================================================================*/
   header {
     display: flex;
     justify-content: space-between;
-    height: 72px;
   }
   header nav ul {
     z-index: 3;
@@ -323,111 +260,40 @@ section_recent-work
   /*============================================================================
   section_career
   ============================================================================*/
-  .section_career ul {
-    display: flex;
-    width: 1280px;
-    margin: 0px auto;
-    justify-content: space-between;
-  }
-
-  .section_career ul li {
-    width: 25%;
-    padding: 20px;
-  }
-
-  /*============================================================================
-  skill-level
-  ============================================================================*/
-  .section_skill-level {
-    padding: 100px 0px;
-    background: #FFDE00;
-    background-size: 200px;
-  }
-  .section_skill-level .h {
-    font-weight: bold;
-    font-size: 36px;
-  }
-  .section_skill-level ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1100px;
-    margin: 0px auto;
-  }
-  .section_skill-level ul li {
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .section_skill-level:before {
-    content: '';
-    width: 100%;
-    height: 0;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    -webkit-transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  }
-
-  .section_slill-level ul li:after {
-    content: "笆ｶ";
-    position: absolute;
-    right: -20;
-    top: 50%;
-    margin-top: -10px;
-    color: #FFDE00;
-    font-size: 20px;
-  }
-
-  /*============================================================================
-  section_overview
-  ============================================================================*/
-  .section_overview {
+  .section_career {
     min-height: 400px;
     background: #F4F4F4;
-    padding: 60px 10px 80px;
+    padding: 100px 10px 80px;
   }
-  .section_overview .text-area {
+  .section_career .text-area {
     width: 100%;
     margin: 0 auto;
     position: relative;
     top: 0;
     left: 0;
   }
-  .section_overview .text-area .h_area {
-    margin-bottom: 20px;
-  }
-  .section_overview .text-area .h_area .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
+  .section_career .text-area .h_area .h {
+    font-size: 48px;
+    font-weight: bold;
     line-height: 1;
-    letter-spacing: .08em;
   }
-  .section_overview .text-area .text-box .mb {
+  .section_career .text-area .text-box .mb {
     margin-bottom: 1em;
   }
 
   /*============================================================================
   section_skillset
   ============================================================================*/
-  .section_skillset {
-    padding: 60px 0px;
-  }
   .section_skillset .inner-area {
     display: flex;
-    width: 1280px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     margin: 0px auto;
+    padding: 0px 0px 60px;
   }
   .section_skillset .title-area {
-    width: 600px;
-    padding-top: 100px;
+    width: 100%;
   }
   .section_skillset .title-area .h_area {
     width: 100%;
@@ -443,52 +309,24 @@ section_recent-work
     font-size: 18px;
   }
   .section_skillset .title-area .img-box {
-    width: 590px;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .section_skillset .title-area .img-box img {
     width: 100%;
   }
   .section_skillset .skill-list-area {
-    width: 600px;
+    width: 100%;
     padding: 20px;
     background: #F4F4F4;
   }
   .section_skillset .skill-list-area ul {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /*============================================================================
-  section_recent-work
-  ============================================================================*/
-  .section_recent-work {
-    min-height: 400px;
-  }
-  .section_recent-work .img-area {
-    width: 50%;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-  }
-  .section_recent-work .text-area {
-    width: 1120px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .section_recent-work .text-area .inner-box {
-    padding: 64px 0px 64px 64px;
-    margin-left: 50%;
-  }
-  .section_recent-work .text-area .inner-box .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: .08em;
-    /*-webkit-transform: translateX(-100px);
-    transform: translateX(-100px);*/
   }
 
   /*@media screen and (max-width: 479px)*/
@@ -498,29 +336,11 @@ section_recent-work
 ============================================================================*/
 @media screen and (min-width: 480px) and (max-width: 767px) {
   /*============================================================================
-  繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ
-  ============================================================================*/
-  .header-animation {
-    animation-name: header-animation;
-    animation-duration: 2s;
-    background: #7addbc;
-  }
-
-  @keyframes header-animation {
-    from {
-      transform: translateY(-60px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
-  /*============================================================================
   header
   ============================================================================*/
   header {
     display: flex;
     justify-content: space-between;
-    height: 72px;
   }
   header nav ul {
     z-index: 3;
@@ -542,111 +362,39 @@ section_recent-work
   /*============================================================================
   section_career
   ============================================================================*/
-  .section_career ul {
-    display: flex;
-    width: 1280px;
-    margin: 0px auto;
-    justify-content: space-between;
-  }
-
-  .section_career ul li {
-    width: 25%;
-    padding: 20px;
-  }
-
-  /*============================================================================
-  skill-level
-  ============================================================================*/
-  .section_skill-level {
-    padding: 100px 0px;
-    background: #FFDE00;
-    background-size: 200px;
-  }
-  .section_skill-level .h {
-    font-weight: bold;
-    font-size: 36px;
-  }
-  .section_skill-level ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1100px;
-    margin: 0px auto;
-  }
-  .section_skill-level ul li {
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .section_skill-level:before {
-    content: '';
-    width: 100%;
-    height: 0;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    -webkit-transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  }
-
-  .section_slill-level ul li:after {
-    content: "笆ｶ";
-    position: absolute;
-    right: -20;
-    top: 50%;
-    margin-top: -10px;
-    color: #FFDE00;
-    font-size: 20px;
-  }
-
-  /*============================================================================
-  section_overview
-  ============================================================================*/
-  .section_overview {
+  .section_career {
     min-height: 400px;
     background: #F4F4F4;
-    padding: 60px 0px 80px;
+    padding: 100px 0px 80px;
   }
-  .section_overview .text-area {
-    width: 960px;
+  .section_career .text-area {
+    width: 480px;
     margin: 0 auto;
     position: relative;
-    top: 0;
-    left: 0;
+    padding: 0px 10px;
   }
-  .section_overview .text-area .h_area {
-    margin-bottom: 20px;
-  }
-  .section_overview .text-area .h_area .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
+  .section_career .text-area .h_area .h {
+    font-size: 48px;
+    font-weight: bold;
     line-height: 1;
-    letter-spacing: .08em;
   }
-  .section_overview .text-area .text-box .mb {
+  .section_career .text-area .text-box .mb {
     margin-bottom: 1em;
   }
 
   /*============================================================================
   section_skillset
   ============================================================================*/
-  .section_skillset {
-    padding: 60px 0px;
-  }
   .section_skillset .inner-area {
     display: flex;
-    width: 1280px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     margin: 0px auto;
+    padding: 0px 0px 60px;
   }
   .section_skillset .title-area {
-    width: 600px;
-    padding-top: 100px;
+    width: 480px;
   }
   .section_skillset .title-area .h_area {
     width: 100%;
@@ -662,52 +410,19 @@ section_recent-work
     font-size: 18px;
   }
   .section_skillset .title-area .img-box {
-    width: 590px;
+    width: 480px;
   }
   .section_skillset .title-area .img-box img {
     width: 100%;
   }
   .section_skillset .skill-list-area {
-    width: 600px;
+    width: 480px;
     padding: 20px;
     background: #F4F4F4;
   }
   .section_skillset .skill-list-area ul {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /*============================================================================
-  section_recent-work
-  ============================================================================*/
-  .section_recent-work {
-    min-height: 400px;
-  }
-  .section_recent-work .img-area {
-    width: 50%;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-  }
-  .section_recent-work .text-area {
-    width: 1120px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .section_recent-work .text-area .inner-box {
-    padding: 64px 0px 64px 64px;
-    margin-left: 50%;
-  }
-  .section_recent-work .text-area .inner-box .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: .08em;
-    /*-webkit-transform: translateX(-100px);
-    transform: translateX(-100px);*/
   }
 
   /*@media screen and (min-width: 480px) and (max-width: 767px)*/
@@ -717,29 +432,11 @@ section_recent-work
 ============================================================================*/
 @media screen and (min-width: 768px) and (max-width: 959px) {
   /*============================================================================
-  繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ
-  ============================================================================*/
-  .header-animation {
-    animation-name: header-animation;
-    animation-duration: 2s;
-    background: #7addbc;
-  }
-
-  @keyframes header-animation {
-    from {
-      transform: translateY(-60px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
-  /*============================================================================
   header
   ============================================================================*/
   header {
     display: flex;
     justify-content: space-between;
-    height: 72px;
   }
   header nav ul {
     z-index: 3;
@@ -761,111 +458,38 @@ section_recent-work
   /*============================================================================
   section_career
   ============================================================================*/
-  .section_career ul {
-    display: flex;
-    width: 1280px;
-    margin: 0px auto;
-    justify-content: space-between;
-  }
-
-  .section_career ul li {
-    width: 25%;
-    padding: 20px;
-  }
-
-  /*============================================================================
-  skill-level
-  ============================================================================*/
-  .section_skill-level {
-    padding: 100px 0px;
-    background: #FFDE00;
-    background-size: 200px;
-  }
-  .section_skill-level .h {
-    font-weight: bold;
-    font-size: 36px;
-  }
-  .section_skill-level ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1100px;
-    margin: 0px auto;
-  }
-  .section_skill-level ul li {
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .section_skill-level:before {
-    content: '';
-    width: 100%;
-    height: 0;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    -webkit-transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  }
-
-  .section_slill-level ul li:after {
-    content: "笆ｶ";
-    position: absolute;
-    right: -20;
-    top: 50%;
-    margin-top: -10px;
-    color: #FFDE00;
-    font-size: 20px;
-  }
-
-  /*============================================================================
-  section_overview
-  ============================================================================*/
-  .section_overview {
+  .section_career {
     min-height: 400px;
     background: #F4F4F4;
-    padding: 60px 0px 80px;
+    padding: 100px 0px 80px;
   }
-  .section_overview .text-area {
-    width: 960px;
+  .section_career .text-area {
+    width: 600px;
     margin: 0 auto;
     position: relative;
-    top: 0;
-    left: 0;
+    padding: 0px 10px;
   }
-  .section_overview .text-area .h_area {
-    margin-bottom: 20px;
-  }
-  .section_overview .text-area .h_area .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
+  .section_career .text-area .h_area .h {
+    font-size: 48px;
+    font-weight: bold;
     line-height: 1;
-    letter-spacing: .08em;
   }
-  .section_overview .text-area .text-box .mb {
+  .section_career .text-area .text-box .mb {
     margin-bottom: 1em;
   }
 
   /*============================================================================
   section_skillset
   ============================================================================*/
-  .section_skillset {
-    padding: 60px 0px;
-  }
   .section_skillset .inner-area {
     display: flex;
-    width: 1280px;
+    flex-direction: column;
+    width: 600px;
     margin: 0px auto;
+    padding: 0px 0px 60px;
   }
   .section_skillset .title-area {
     width: 600px;
-    padding-top: 100px;
   }
   .section_skillset .title-area .h_area {
     width: 100%;
@@ -881,7 +505,7 @@ section_recent-work
     font-size: 18px;
   }
   .section_skillset .title-area .img-box {
-    width: 590px;
+    width: 600px;
   }
   .section_skillset .title-area .img-box img {
     width: 100%;
@@ -894,39 +518,6 @@ section_recent-work
   .section_skillset .skill-list-area ul {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /*============================================================================
-  section_recent-work
-  ============================================================================*/
-  .section_recent-work {
-    min-height: 400px;
-  }
-  .section_recent-work .img-area {
-    width: 50%;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-  }
-  .section_recent-work .text-area {
-    width: 1120px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .section_recent-work .text-area .inner-box {
-    padding: 64px 0px 64px 64px;
-    margin-left: 50%;
-  }
-  .section_recent-work .text-area .inner-box .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: .08em;
-    /*-webkit-transform: translateX(-100px);
-    transform: translateX(-100px);*/
   }
 
   /*@media screen and (min-width: 768px) and (max-width: 959px)*/
@@ -936,29 +527,11 @@ section_recent-work
 ============================================================================*/
 @media screen and (min-width: 960px) and (max-width: 1279px) {
   /*============================================================================
-  繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ
-  ============================================================================*/
-  .header-animation {
-    animation-name: header-animation;
-    animation-duration: 2s;
-    background: #7addbc;
-  }
-
-  @keyframes header-animation {
-    from {
-      transform: translateY(-60px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
-  /*============================================================================
   header
   ============================================================================*/
   header {
     display: flex;
     justify-content: space-between;
-    height: 72px;
   }
   header nav ul {
     z-index: 3;
@@ -980,111 +553,40 @@ section_recent-work
   /*============================================================================
   section_career
   ============================================================================*/
-  .section_career ul {
-    display: flex;
-    width: 1280px;
-    margin: 0px auto;
-    justify-content: space-between;
-  }
-
-  .section_career ul li {
-    width: 25%;
-    padding: 20px;
-  }
-
-  /*============================================================================
-  skill-level
-  ============================================================================*/
-  .section_skill-level {
-    padding: 100px 0px;
-    background: #FFDE00;
-    background-size: 200px;
-  }
-  .section_skill-level .h {
-    font-weight: bold;
-    font-size: 36px;
-  }
-  .section_skill-level ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1100px;
-    margin: 0px auto;
-  }
-  .section_skill-level ul li {
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .section_skill-level:before {
-    content: '';
-    width: 100%;
-    height: 0;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    -webkit-transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  }
-
-  .section_slill-level ul li:after {
-    content: "笆ｶ";
-    position: absolute;
-    right: -20;
-    top: 50%;
-    margin-top: -10px;
-    color: #FFDE00;
-    font-size: 20px;
-  }
-
-  /*============================================================================
-  section_overview
-  ============================================================================*/
-  .section_overview {
+  .section_career {
     min-height: 400px;
     background: #F4F4F4;
-    padding: 60px 0px 80px;
+    padding: 120px 0px 60px;
   }
-  .section_overview .text-area {
+  .section_career .text-area {
     width: 960px;
     margin: 0 auto;
     position: relative;
-    top: 0;
-    left: 0;
+    padding: 0px 10px;
   }
-  .section_overview .text-area .h_area {
-    margin-bottom: 20px;
-  }
-  .section_overview .text-area .h_area .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
+  .section_career .text-area .h_area .h {
+    font-size: 48px;
+    font-weight: bold;
     line-height: 1;
-    letter-spacing: .08em;
   }
-  .section_overview .text-area .text-box .mb {
+  .section_career .text-area .text-box .mb {
     margin-bottom: 1em;
   }
 
   /*============================================================================
   section_skillset
   ============================================================================*/
-  .section_skillset {
-    padding: 60px 0px;
-  }
   .section_skillset .inner-area {
     display: flex;
-    width: 1280px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    width: 960px;
     margin: 0px auto;
+    padding: 60px 0px;
   }
   .section_skillset .title-area {
-    width: 600px;
-    padding-top: 100px;
+    width: 480px;
   }
   .section_skillset .title-area .h_area {
     width: 100%;
@@ -1100,52 +602,19 @@ section_recent-work
     font-size: 18px;
   }
   .section_skillset .title-area .img-box {
-    width: 590px;
+    width: 480px;
   }
   .section_skillset .title-area .img-box img {
     width: 100%;
   }
   .section_skillset .skill-list-area {
-    width: 600px;
+    width: 480px;
     padding: 20px;
     background: #F4F4F4;
   }
   .section_skillset .skill-list-area ul {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /*============================================================================
-  section_recent-work
-  ============================================================================*/
-  .section_recent-work {
-    min-height: 400px;
-  }
-  .section_recent-work .img-area {
-    width: 50%;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-  }
-  .section_recent-work .text-area {
-    width: 1120px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .section_recent-work .text-area .inner-box {
-    padding: 64px 0px 64px 64px;
-    margin-left: 50%;
-  }
-  .section_recent-work .text-area .inner-box .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: .08em;
-    /*-webkit-transform: translateX(-100px);
-    transform: translateX(-100px);*/
   }
 
   /*@media screen and (min-width: 960px) and (max-width: 1279px)*/
@@ -1155,29 +624,11 @@ section_recent-work
 ============================================================================*/
 @media screen and (min-width: 1280px) {
   /*============================================================================
-  繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ
-  ============================================================================*/
-  .header-animation {
-    animation-name: header-animation;
-    animation-duration: 2s;
-    background: #7addbc;
-  }
-
-  @keyframes header-animation {
-    from {
-      transform: translateY(-60px);
-    }
-    to {
-      transform: translateY(0px);
-    }
-  }
-  /*============================================================================
   header
   ============================================================================*/
   header {
     display: flex;
     justify-content: space-between;
-    height: 72px;
   }
   header nav ul {
     z-index: 3;
@@ -1199,114 +650,41 @@ section_recent-work
   /*============================================================================
   section_career
   ============================================================================*/
-  .section_career ul {
-    display: flex;
-    width: 1280px;
-    margin: 0px auto;
-    justify-content: space-between;
-  }
-
-  .section_career ul li {
-    width: 25%;
-    padding: 20px;
-  }
-
-  /*============================================================================
-  skill-level
-  ============================================================================*/
-  .section_skill-level {
-    padding: 100px 0px;
-    background: #FFDE00;
-    background-size: 200px;
-  }
-  .section_skill-level .h {
-    font-weight: bold;
-    font-size: 36px;
-  }
-  .section_skill-level ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1100px;
-    margin: 0px auto;
-  }
-  .section_skill-level ul li {
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .section_skill-level:before {
-    content: '';
-    width: 100%;
-    height: 0;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    -webkit-transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: all 0.8s 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  }
-
-  .section_slill-level ul li:after {
-    content: "笆ｶ";
-    position: absolute;
-    right: -20;
-    top: 50%;
-    margin-top: -10px;
-    color: #FFDE00;
-    font-size: 20px;
-  }
-
-  /*============================================================================
-  section_overview
-  ============================================================================*/
-  .section_overview {
+  .section_career {
     min-height: 400px;
     background: #F4F4F4;
-    padding: 60px 0px 80px;
+    padding: 120px 0px 60px;
   }
-  .section_overview .text-area {
+  .section_career .text-area {
     width: 960px;
     margin: 0 auto;
     position: relative;
     top: 0;
     left: 0;
   }
-  .section_overview .text-area .h_area {
-    margin-bottom: 20px;
-  }
-  .section_overview .text-area .h_area .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
+  .section_career .text-area .h_area .h {
+    font-size: 48px;
+    font-weight: bold;
     line-height: 1;
-    letter-spacing: .08em;
   }
-  .section_overview .text-area .text-box .mb {
+  .section_career .text-area .text-box .mb {
     margin-bottom: 1em;
   }
 
   /*============================================================================
   section_skillset
   ============================================================================*/
-  .section_skillset {
-    padding: 60px 0px;
-    height: 100vh;
-    background: #F4F4F4;
-  }
   .section_skillset .inner-area {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
     width: 1280px;
     margin: 0px auto;
+    padding: 60px 0px;
   }
   .section_skillset .title-area {
     width: 600px;
-    padding-top: 100px;
   }
   .section_skillset .title-area .h_area {
     width: 100%;
@@ -1322,7 +700,7 @@ section_recent-work
     font-size: 18px;
   }
   .section_skillset .title-area .img-box {
-    width: 590px;
+    width: 600px;
   }
   .section_skillset .title-area .img-box img {
     width: 100%;
@@ -1334,52 +712,36 @@ section_recent-work
   .section_skillset .skill-list-area .skill-list-box {
     width: 600px;
     padding: 20px;
-    background: #fff;
-    box-shadow: 2px 2px 2px #ccc;
   }
   .section_skillset .skill-list-area .skill-list-box ul {
     display: flex;
     flex-wrap: wrap;
   }
 
-  /*============================================================================
-  section_recent-work
-  ============================================================================*/
-  .section_recent-work {
-    min-height: 400px;
-  }
-  .section_recent-work .img-area {
-    width: 50%;
-    background-size: cover;
-    height: 100%;
-    position: absolute;
-  }
-  .section_recent-work .text-area {
-    width: 1120px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .section_recent-work .text-area .inner-box {
-    padding: 64px 0px 64px 64px;
-    margin-left: 50%;
-  }
-  .section_recent-work .text-area .inner-box .h {
-    font-family: Poppins,sans-serif;
-    font-size: 62px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: .08em;
-    /*-webkit-transform: translateX(-100px);
-    transform: translateX(-100px);*/
-  }
-
   /*@media screen and (min-width: 1280px)*/
 }
-.effect2 {
+.effect_fade-in_move-right {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateX(-50px);
+  transition: all 1s;
+}
+
+/*============================================================================
+繧｢繝九Γ繝ｼ繧ｷ繝ｧ繝ｳ
+============================================================================*/
+.header-animation {
+  animation-name: header-animation;
+  animation-duration: 2s;
+  background: #7addbc;
+}
+
+@keyframes header-animation {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
