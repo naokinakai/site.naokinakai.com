@@ -72,8 +72,8 @@
           <li>JavaScript</li>
           <li>ES6</li>
           <li>jQuery</li>
-          <li>React</li>
-          <li>vue.js</li>
+          <!--<li>React</li>
+          <li>vue.js</li>-->
         </ul>
         <h2 class="list-h">コンパイラーなど</h2>
         <ul>
